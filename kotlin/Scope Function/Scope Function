@@ -1,0 +1,14 @@
+스코프 함수(Scope Function)
+
+val victor = Person().apply{
+    name = "victor"
+    age = 20
+}
+
+apply, also, run(with), / let
+
+apply /also -> 처리가 끝나면(스코프 끝) 인스턴스(객체)를 반환한다
+run(with) / let -> 처리가 끝나면 최종값을 반환한다
+
+apply / run(with) -> this 스코프 밖에 있는 변수 이름과 혼동할수 있다
+also / let -> it 스코프 밖에 있는 변수 이름과 혼동을 방지한다
