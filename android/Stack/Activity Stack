@@ -1,0 +1,20 @@
+Activity Stack
+- 기본 : LIFO(Last in First Out)
+- stack 되도록 작업 X
+- 분명한 의도를 가지고 적용해야 함
+- 의도하지 않은 상황 발생 가능성 ↑
+-> 모든 종류를 다 알 수는 없다
+ -> launchMode,Flag를 찾아본다(필요할때)
+
+Stack 관리 
+- Manifest 이용
+ - launchMode
+  - standrad(LIFO)
+  - singleTop
+  - singleTask
+  - singleInstance
+
+- Intent Flag 이용
+ - FLAG_ACTIVITY_NEW_TASK (singleTask)
+ - FLAG_ACTIVITY_SINGLE_TOP (singleTop)
+ - FLAG_ACTIVITY_CLEAR_TOP
