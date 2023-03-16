@@ -18,3 +18,11 @@ Stack 관리
  - FLAG_ACTIVITY_NEW_TASK (singleTask)
  - FLAG_ACTIVITY_SINGLE_TOP (singleTop)
  - FLAG_ACTIVITY_CLEAR_TOP
+
+ - FLAG_ACTIVITY_NO_HISTORY
+  - 호출된 액티비티는 스택에 쌓이지 않는다 (로딩)
+ - FLAG_ACTIVITY_REORDER_TO_FRONT
+  - 호출된 액티비티가 스택에 존재할 경우 최상위로 올려준다
+  - A B C -> A를 호출 -> A
+ -FLAG_ACTIVITY_NO_ANIMATION
+  - 화면전화 애니메이션을 생략 한다
