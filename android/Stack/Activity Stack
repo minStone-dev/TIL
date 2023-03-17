@@ -26,3 +26,9 @@ Stack 관리
   - A B C -> A를 호출 -> A
  -FLAG_ACTIVITY_NO_ANIMATION
   - 화면전화 애니메이션을 생략 한다
+
+- Intent Flag 적용
+ - setFlag
+  - 기존에 적용된 flag를 삭제하고 다시 설정한다
+ - addFlag
+  - flag를 추가한다
