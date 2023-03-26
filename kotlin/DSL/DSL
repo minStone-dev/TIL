@@ -1,0 +1,19 @@
+Domain Specific Language
+- 도메인 특화 언어
+- 특정한 도메인을 적용하는데 특등
+
+- Groovy DSL 과 Kotlin DSL 스크립트 파일은 빌드스크립트 확장자명으로 구분된다.
+  멀티 프로젝트를 빌드할 때는 각 모듈별로 각각 Groovy DSL 과 Kotlin DSL 을 작성하여 사용가능하다.
+
+  Groovy DSL: .gradle
+
+  build.gradle, settings.gradle
+  Kotlin DSL: .gradle.kts
+
+  build.gradle.kts, settings.gradle.kts
+
+
+General Purpose Language
+- 범용 프로그래밍 언어
+- C,Java 등이 이에 속함
+- 다양한 도메인의 소프트웨어 개발을 위해 사용
