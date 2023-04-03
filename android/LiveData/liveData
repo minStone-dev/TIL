@@ -1,0 +1,14 @@
+Live Data
+- LiveData는 Lifecycle를 인식할 수 있는 클래스이다.
+- Activity와 Fragment의 LifeCycle을 인식하여 현재 활성화가 되어있는 관찰자만 업데이트하게 된다.
+- LifeCycle이 종료되면 같이 사라지기 때문에 메모리 누출이 없다
+
+- LifecycleOwner
+ - android는 아무나 LiveData를 업데이트 시킬수 없다,Activity와 Fragment의 LifeCycler에 따라 활성화되고, 종료된다.
+ - LifecycleOwner 인터페이스는 Activity나 Fragment의 LifeCycle을 알고 LiveData에게 알려준다
+  - STARTED or RESUME -> 관찰자 활성
+  - DESTROYED -> 관찰자 삭제
+
+- Observe Pattern
+ - 데이터를 발행하는 발행자(Observable)
+ - 데이터를 구독하는 구독자(Observe)
