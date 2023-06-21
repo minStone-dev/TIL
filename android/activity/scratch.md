@@ -1,4 +1,4 @@
-# 액티비티 생명주기(Activity Lifecircle)
+# 액티비티 생명주기(Activity Lifecycle)
 <img src = "activity_lifecycle.png"/><br>
 ## 액티비티란?
 사용자에게 UI가 있는 화면을 제공하는 앱 컴포넌트 이다.<br>
@@ -10,7 +10,7 @@
   - 런처  activity, main activity
     - 앱이 실행될때 최초로 실행되는 activity
 
-## 생명주기(Lifecircle)란?
+## 생명주기(Lifecycle)란?
 액티비티의 생명주기란 화면전환,앱 종료등 **상태변화**에 대응하는 **생명주기 매서드**들을 말한다<br>
 안드로이드 OS가 Activity를 직접 종료시키는 일은 없다.<br>
 다만 프로세스는 종료가능 하다.<br>
