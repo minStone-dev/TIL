@@ -91,3 +91,5 @@
 - onPause() : 사용자가 fragment를 떠날 때 호출한다.포커스를 가지고 있지는 않지만 back stack에<br>
    있을 수 있으므로  완전히 사라지는 것은 아니다. 여기서 데이터를 저장하는 것이 좋다.
 - onDestroy() : activity가 destroy 될 때 같이 destory 된다.
+
+
