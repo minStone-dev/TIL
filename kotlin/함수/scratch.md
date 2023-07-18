@@ -18,3 +18,60 @@ or
     return 값;
 }
 ```
+### kotlin에서의 함수 사용법은 아래와 같다.
+```kotlin
+fun 함수명(매개변수): Unit{
+    return 하지않는 함수(void)에 선언한
+    리턴타입 Unit은 생략 가능하다
+}
+or
+fun 함수명 (매개변수): 리턴타입{
+    return 값
+}
+```
+### kotlin의 단일 표현식 함수(Single-expression functions)
+아래는 a,b를 받아 더한값을 리턴하는 함수를 작성하는 방법이다
+```kotlin
+fun sum(a: Int,b: Int): Int{
+    return a+b
+}
+or
+fun sum (a: Int,b: Int): Int = a+b
+or
+fun sum (a: Int,b: Int) = a+b // 리턴값이 유추가능하기 때문에 리턴타입을 명시하지 않아도 Int타입 함수로 변환된다.
+```
+### 기본 매개변수 (Default Argument)
+kotlin은 기본 매개변수를 지원한다
+```kotlin
+fun sum(
+  a: Int = 0,
+  b: Int = 0
+) = a + b
+```
+### 네임드 매개변수 (Named Argument)
+kotlin은 파라미터의 이름을 명시하여 순서와 상관없이 특정 파라미터에 값을 넣을수 있다.<br>
+명시하지 않을 값들은 선택적으로 기본값을 사용하게 된다.<br>
+빌더패턴(생성자 오버로딩)을 사용하지 않고도 java와 같은 기능을 사용할수있다.
+```kotlin
+fun sum(
+  a: Int = 0,
+  b: Int = 0
+) = a + b
+
+// 네임드 매개변수 사용
+
+sum(b = 5) // 5 반환
+```
+### 가변인자
+Java에서 ```type ... name``` 으로 메서드의 가변인자를 정의 하였다<br>
+kotlin에서는 vararg 키워드를 사용해 가변인자를 정의 한다.<br>
+```kotlin
+fun sum(
+  a: Int = 0,
+  b: Int = 0
+) = a + b
+
+// 네임드 매개변수 사용
+
+sum(b = 5) // 5 반환
+```
