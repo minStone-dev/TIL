@@ -19,6 +19,7 @@ or
 }
 ```
 ### kotlin에서의 함수 사용법은 아래와 같다.
+kotlin에서 함수는 꼭 class안에 있을필요는 없다, 클래스 밖에도 함수를 선언할수 있다.
 ```kotlin
 fun 함수명(매개변수): Unit{
     return 하지않는 함수(void)에 선언한
@@ -66,12 +67,32 @@ sum(b = 5) // 5 반환
 Java에서 ```type ... name``` 으로 메서드의 가변인자를 정의 하였다<br>
 kotlin에서는 vararg 키워드를 사용해 가변인자를 정의 한다.<br>
 ```kotlin
+fun main() {
+  println(sumAll(1, 2, 3, 4, 5)) // 여러 인자들을 하나씩 넣어 준다
+  
+  val list = intArrayOf(1, 2, 3, 4, 5) // 넣을 인자들을 리스트 형태로 선언시킨다
+  println(sumAll(*list)) // 스프레드 연산자를 사용해 인자들을 전달한다(스프레드 연사자는 변수앞에 *을 붙인다)
+  
+}
+
 fun sum(
   a: Int = 0,
   b: Int = 0
 ) = a + b
 
-// 네임드 매개변수 사용
-
-sum(b = 5) // 5 반환
+fun sumAll(vararg num: Int): Int{
+  return num.sum()
+}
+```
+### 지역함수
+```kotlin
+fun min() {
+  val dev = 123
+    fun stone() {
+        println(dev) // kotlin은 함수형 언어의 특성을 가지기에 클로저(Closure)를 지원한다
+                     // 따라서 stone()는 min()의 변수인 dev에 접근할수 있다
+    }
+    
+    stone()
+}
 ```
