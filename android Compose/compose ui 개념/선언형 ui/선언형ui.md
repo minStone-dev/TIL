@@ -18,4 +18,8 @@
 - 위의 방법들을 viewBinding or DataBinding을 사용해 조금더 간결하게 처리가 가능하다.
 
 ### 선언형 UI
-
+선언형 UI에서는 XML 을 사용하지 않고, 코드로 UI를 작성한다.<br>
+androi Jetpack Compose는 @Composable 함수로 이루어져 있다.<br>
+```kotlin
+// ex)
+@Composable
